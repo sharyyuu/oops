@@ -1,0 +1,67 @@
+package sharyu.java;
+import java.util.*;
+
+public class calc {
+
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		int choice=sc.nextInt();
+	
+		double num1=3,num2=3,result;
+		
+		do {
+			System.out.println("\n====JAVA CALCULATOR====");
+			System.out.println("1.addition(+)");
+			System.out.println("2.substraction(-)");
+			System.out.println("3.multiplication(*)");
+			System.out.println("4.division(/)");
+			System.out.println("5.modulus(%)");
+			System.out.println("6.exit");
+			
+			switch(choice){
+			case 1:
+				result=num1+num2;
+				System.out.println("Result="+ result);
+				break;
+			case 2:
+				result=num1-num2;
+				System.out.println("Result="+result);
+				break;
+			case 3:
+				result=num1*num2;
+				System.out.println("Result="+result);
+				break;
+			case 4:
+				result=num1/num2;
+				System.out.println("Result="+result);
+				break;
+			case 5:
+				result=num1%num2;
+				System.out.println("Result="+result);
+				break;
+				default:{
+					System.out.println("invalid operator");
+				}
+				
+			
+					
+					
+				
+				
+			}
+			
+			
+				
+			
+		}
+		
+		
+		
+		
+
+	while(choice==6);
+	sc.close();
+	}
+
+}
+
