@@ -1,0 +1,38 @@
+package sharyu.java;
+
+public class multi {
+	void info(){
+		String name="Sharyu";
+		int age=19;
+		System.out.println("Name:"+name);
+		System.out.println("Age:"+age);
+			
+	}
+static class emp extends multi{
+	void show() {
+		String name="Sharyu";
+		int i=2151;
+		System.out.println("Name:"+name);
+		System.out.println("ID:"+i);
+	}
+static class student extends emp{
+	void display() {
+		String name="Dhan";
+		int dob=170507;
+		System.out.println("Name:"+name);
+		System.out.println("DOB:"+dob);
+	}
+	
+}
+public static void main(String[] args) {
+	emp e1=new emp();
+	student s1=new student();
+	e1.info();
+	e1.show();
+	s1.display();
+	
+}
+
+	}
+
+}
